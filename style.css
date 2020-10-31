@@ -35,6 +35,12 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #eeeeee;
+}
 .main-header,
 .main-footer {
   display: flex;
@@ -43,6 +49,11 @@ form {
   padding: 50px 10px;
   text-align: center;
   color: #ffffff;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  padding-bottom: 0;
 }
 
 .main-header p {
@@ -55,3 +66,37 @@ form {
   margin: 0 auto;
 }
 
+.input-group {
+  display: flex;
+  flex-direction: column;
+  color: #eeeeee;
+  margin-bottom: 1rem;
+}
+
+.option-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+form input,
+#dropdown,
+#role,
+#input-textarea,
+#carrier-path {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+#submit {
+  background-color:  #383838;
+  border-radius: 0.2rem;
+  padding: 0.7rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  color: #eeeeee;
+}
+
+#submit:hover {
+  background:#999999 ;
+}
