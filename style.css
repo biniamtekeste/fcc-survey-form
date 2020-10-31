@@ -100,3 +100,69 @@ form input,
 #submit:hover {
   background:#999999 ;
 }
+
+@media all and (max-width: 895px){
+
+  h1#title {
+    font-size: 2.3rem;
+
+  }
+
+.main-header p {
+  font-size: 1.2rem;
+}
+
+label {
+  font-size: 1.1rem;
+}
+
+}
+
+@media all and (max-width: 768px){
+
+h1#title {
+  font-size: 2rem;
+
+}
+
+.main-header p {
+  font-size: 1rem;
+}
+}
+
+
+@media all and (max-width: 645px){
+  h1#title span:last-child{
+    display: block;
+    margin-top: 15px;
+    
+  }
+  .main-header p {
+    font-size: 0.8rem;
+  }
+  
+  form {
+    width: 90%;
+  }
+  }
+  
+  
+  @media all and (max-width: 410px){
+    h1#title {
+      font-size: 1.3rem;
+      
+    }
+    
+    .main-header p span{
+      font-size: 0.8rem;
+      display: block;
+    }
+  
+    .option-text {
+      font-size: 1rem;
+    }
+  
+    .main-footer p{
+      font-size: 0.6rem;
+    }
+  }
