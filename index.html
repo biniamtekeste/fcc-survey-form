@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css  " />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&family=Roboto+Slab:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Ericoders | Survey Form</title>
   </head>
   <body>
@@ -17,6 +21,282 @@
         ><span>the platform</span>
       </p>
     </header>
-    
+
+    <div class="wrapper">
+      <form action="" id="survey-form">
+        <div class="input-group">
+          <label for="name-label" id="name-label">Name </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Full Name"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="email-label" id="emai-label">Email </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="age-label" id="age-label">Age (Optional) </label>
+          <input
+            type="number"
+            class="age"
+            name="age"
+            min="10"
+            max="99"
+            placeholder="Enter your Age"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="country" id="country">Which country are you in?</label>
+          <select name="country" id="dropdown" required>
+            <option value="Eritrea">Eritrea</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Kenya">Kenya</option>
+            <option value="South-Sudan">South Sudan</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Uganda">Uganda</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="role">Which option describes your current role?</label>
+          <select name="role" id="role" required>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="prefer-not-to-say">Prefer Not to Say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="info">How did you know about Ericoders Bootcamp?</label>
+          <label for="" class="option-text">
+            <input
+              type="radio"
+              class="input-radio"
+              name="info-source"
+              value="from-a-friend"
+              checked
+            />
+            From a Friend
+          </label>
+          <label for="" class="option-text">
+            <input
+              type="radio"
+              class="input-radio"
+              name="info-source"
+              value="search-engines"
+            />
+            From a Friend
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="radio"
+              class="input-radio"
+              name="info-source"
+              value="advertisement"
+            />
+            Advertisement
+          </label>
+        </div>
+
+        <div class="input-group">
+          <label> Select your carrier path</label>
+          <select name="role" id="carrier-path">
+            <option value="front-end">Front End</option>
+            <option value="back-end">Back End</option>
+            <option value="full-stack">Full Stack</option>
+            <option value="mobile-application">Mobile Application</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="">Technologies you might know </label>
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="check-familiarity"
+              class="option-text"
+              value="html"
+            />
+            HTML
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="check-familiarity"
+              class="option-text"
+              value="css"
+            />
+            CSS
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="check-familiarity"
+              class="option-text"
+              value="javascript"
+            />
+            JavaScript
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="check-familiarity"
+              class="option-text"
+              value="jquery"
+            />
+            JQuery
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="check-familiarity"
+              class="option-text"
+              value="nodejs"
+            />
+            NodeJs
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="check-familiarity"
+              class="option-text"
+              value="api-and-microservices"
+            />
+            API and Microservices
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="check-familiarity"
+              class="option-text"
+              value="angular"
+            />
+            Angular
+          </label>
+        </div>
+
+        <div class="input-group">
+          <label for="">Check your skill-set and tools </label>
+
+          <label class="option-text">
+            <input
+              type="checkbox"
+              name="skill-set"
+              class="input-checkbox"
+              value="git-and-github"
+            />
+            Git and Github
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="skill-set"
+              class="input-checkbox"
+              value="linux-command"
+            />
+            Linux Command Line
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="skill-set"
+              class="input-checkbox"
+              value="algorithm-and-data-stracture"
+            />
+            Algorithm and Data Stracture
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="checkbox"
+              name="skill-set"
+              class="input-checkbox"
+              value="Linters"
+            />
+            Linters
+          </label>
+        </div>
+
+        <div class="input-group">
+          <label for="learning-mode">How would you like to learn?</label>
+
+          <label for="" class="option-text">
+            <input
+              type="radio"
+              name="learning-mode"
+              class="input-radio"
+              id="self-paced"
+              value="Online-self-paced"
+            />
+            Online (Self-paced)
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="radio"
+              name="learning-mode"
+              class="input-radio"
+              id="online-class"
+              value="Online-class"
+            />
+            Online Class
+          </label>
+
+          <label for="" class="option-text">
+            <input
+              type="radio"
+              name="learning-mode"
+              class="input-radio"
+              id="On-campus"
+              value="On-campus"
+            />
+            On-Campus (if you're living in Uganda)
+          </label>
+        </div>
+
+        <div class="input-group">
+          <label for="comment">Any Comment or Suggestions</label>
+
+          <textarea
+            name="comment"
+            id="input-textarea"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+
+        <div class="input-group">
+          <input type="submit" value="Submit" id="submit" />
+        </div>
+      </form>
+      <footer class="main-footer">
+        <p>Bini Blissful &copf;2020 All Rights Reserved</p>
+      </footer>
+    </div>
   </body>
 </html>
