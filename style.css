@@ -29,7 +29,7 @@ a {
   .main-header {
       display: flex;
       flex-direction: column;
-      background: #1b1b32cc;
+      backgroundd: #1b1b32cc;
       padding: 50px 10px;
       text-align: center;
       color: #ffffff;
